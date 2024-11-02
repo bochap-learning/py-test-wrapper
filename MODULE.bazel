@@ -1,5 +1,4 @@
 bazel_dep(name = "aspect_rules_py", version = "0.9.1")
-bazel_dep(name = "caseyduquettesc_rules_python_pytest", version = "1.1.1")
 
 # Minimum version needs:
 # feat: add interpreter_version_info to py_runtime by @mattem in #1671
