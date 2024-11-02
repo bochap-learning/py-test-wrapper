@@ -1,0 +1,16 @@
+load("//tools/runner:defs.bzl", "pytest_runner")
+
+py_library(
+    name = "adder",
+    srcs = ["adder.py"],
+    deps = [],
+    visibility = ["//visibility:public"]
+)
+
+pytest_runner(
+    name = "adder_tests",
+    srcs = glob(["*_test.py"]),
+    deps = [
+        ":adder"
+    ]
+)

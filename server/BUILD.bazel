@@ -1,0 +1,8 @@
+py_binary(
+    name = "main",
+    srcs = ["main.py"],
+    main = "main.py",
+    deps = [
+        "//lib:adder"
+    ]
+)
